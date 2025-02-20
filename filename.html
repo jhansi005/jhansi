@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Student Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e3d58;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1e3d58;
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill, .project {
+            flex: 1 1 30%;
+            background-color: #e6f2ff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .skill h3, .project h3 {
+            color: #1e3d58;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background-color: #1e3d58;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skills, .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill, .project {
+                flex: 1 1 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CSE Student Portfolio</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a passionate Computer Science Engineering (CSE) student. I am constantly working to improve my coding and problem-solving skills. My goal is to contribute to innovative projects and advance my knowledge in fields like Artificial Intelligence, Web Development, and Data Science.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">
+            <h3>Programming</h3>
+            <p>Python, C++, Java, JavaScript</p>
+        </div>
+        <div class="skill">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, React, Node.js</p>
+        </div>
+        <div class="skill">
+            <h3>Database</h3>
+            <p>SQL, MongoDB, Firebase</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website built using HTML, CSS, and JavaScript to showcase my skills, projects, and achievements.</p>
+        </div>
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>A weather forecast web app using React and OpenWeather API, allowing users to check weather updates for their location.</p>
+        </div>
+        <div class="project">
+            <h3>Task Management System</h3>
+            <p>A task management web application with user authentication, built using Node.js, Express, and MongoDB.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to reach out to me via email:</p>
+    <p><a href="mailto:example@domain.com">example@domain.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 CSE Student Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
